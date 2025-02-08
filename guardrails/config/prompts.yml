@@ -1,0 +1,22 @@
+prompts:
+  - task: self_check_input
+    content: |
+      Nhiệm vụ của bạn là kiểm tra xem tin nhắn của người dùng có tuân thủ chính sách
+      dưới đây khi thực hiện cuộc trò chuyện không.
+
+      Các chính sách cấm:
+      -  Chia sẻ các nội dung nhạy cảm và thông tin cá nhân.
+      -  Chứa tin nhắn trống.
+      -  Chứa những dữ liệu có hại.
+      -  Yêu cầu giả mạo ai đó, giả mạo thông tin nào đó.
+      -  Sử dụng từ ngữ lăng mạ, không tôn trọng.
+
+      Đây là các quy định nghiêm ngặt. Nếu 1 trong các điều cấm trên bị vi phạm,
+      bạn phải chặn tin nhắn của người dùng bằng cách trả lời "Có".
+      Nếu không vi phạm điều nào trên đây: Trả lời "Không".
+
+      Tin nhắn của người dùng: "{{user_input}}"
+
+      Câu hỏi: Tin nhắn của người dùng có nên bị chặn không?
+      Trả lời [Có/Không]:
+  

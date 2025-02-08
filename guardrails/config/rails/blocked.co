@@ -1,0 +1,10 @@
+define flow check blocked terms
+  $allowed = execute check_blocked_terms
+
+  if not $allowed
+    bot refuse to respond
+    stop
+
+
+define bot refuse to respond
+  "Xin lỗi, tôi không thể trả lời điều này."
